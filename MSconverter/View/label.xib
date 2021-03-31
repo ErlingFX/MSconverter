@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Label" customModule="MSconverter" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ByX-ib-IRz">
+                    <rect key="frame" x="205" y="143" width="154" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="jpJ-D0-XSw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cDG-cB-qe1">
+                    <rect key="frame" x="205" y="217" width="154" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="u6P-SB-tnk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SjV-3u-kpb">
+                    <rect key="frame" x="148" y="305" width="118" height="76"/>
+                    <color key="backgroundColor" red="0.84465640779999995" green="0.51457053419999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <state key="normal" title="buttonOk">
+                        <color key="titleColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonOk:" destination="iN0-l3-epB" eventType="touchUpInside" id="qNa-ZF-OdX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemGray3Color"/>
+            <constraints>
+                <constraint firstItem="ByX-ib-IRz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="205" id="7gc-vV-C0e"/>
+                <constraint firstItem="SjV-3u-kpb" firstAttribute="top" secondItem="cDG-cB-qe1" secondAttribute="bottom" constant="54" id="8Wb-zh-ehN"/>
+                <constraint firstItem="ByX-ib-IRz" firstAttribute="leading" secondItem="cDG-cB-qe1" secondAttribute="leading" id="D3Q-p0-FbT"/>
+                <constraint firstItem="ByX-ib-IRz" firstAttribute="trailing" secondItem="cDG-cB-qe1" secondAttribute="trailing" id="erw-s5-JyW"/>
+                <constraint firstItem="ByX-ib-IRz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="99" id="haG-aE-XsJ"/>
+                <constraint firstItem="SjV-3u-kpb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mFN-Bw-ZZc"/>
+                <constraint firstItem="cDG-cB-qe1" firstAttribute="top" secondItem="ByX-ib-IRz" secondAttribute="bottom" constant="40" id="oRf-e0-uiP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SjV-3u-kpb" secondAttribute="bottom" constant="481" id="tO1-Th-b8w"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ByX-ib-IRz" secondAttribute="trailing" constant="55" id="tcF-Dr-pdb"/>
+                <constraint firstItem="SjV-3u-kpb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="148" id="udk-Ru-pV8"/>
+            </constraints>
+            <connections>
+                <outlet property="rubText" destination="cDG-cB-qe1" id="3JK-cd-Ie8"/>
+                <outlet property="usdText" destination="ByX-ib-IRz" id="38L-nW-mei"/>
+            </connections>
+            <point key="canvasLocation" x="34.782608695652179" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
